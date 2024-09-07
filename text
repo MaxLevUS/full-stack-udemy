@@ -1,0 +1,14 @@
+display{
+    inline-block,
+    block;
+    inline,
+    none
+    
+}
+
+float{
+    left,
+    right,
+    both
+}
+
