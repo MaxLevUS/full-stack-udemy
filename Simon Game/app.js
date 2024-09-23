@@ -12,13 +12,12 @@ let four = document.querySelectorAll(".four")
 
 let countLevels = 10
 
-function switchLevel(){
+
     let count = 0;
     $(".header").on("click", function () {
             $(".header").text(`Level ${count}`);
             count++;
              })    
-        }
 
 
 
