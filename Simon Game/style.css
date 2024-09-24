@@ -42,18 +42,18 @@ font-size: 40px;
     cursor: pointer;
 }
 
-.one{
+#one{
     background-color: greenyellow;
 }
 
-.two{
+#two{
     background-color: red;
 }
 
-.three{
+#three{
     background-color: yellow;
 }
 
-.four{
+#four{
     background-color: blue;
 }
