@@ -28,6 +28,7 @@ height: 100px;
 display: flex;
 justify-content: center;
 align-items: center;
+text-align: center;
 color: azure;
 font-size: 40px;
 }

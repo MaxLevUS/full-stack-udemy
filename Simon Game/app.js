@@ -51,6 +51,8 @@ function blinkSquare(square){
 
 squares.forEach((el, index)=>{
     el.addEventListener('click', function(){
+
+        blinkSquare(el);
         userSequence.push(el)
 
     checkUserSequence(userSequence.length-1);
@@ -67,7 +69,7 @@ function checkUserSequence(currentLevel){
 }
 
 function gameOver(){
-    $('.header').text("Game Over, Press A to start");
+    $('.header').html('Game Over <br> Maksim sends you "HI!!!)))" <br> Press A to start');
     sequence=[];
     userSequence=[];
     count=0;
