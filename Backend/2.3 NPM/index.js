@@ -15,9 +15,18 @@
 
 // import superheroes from 'superheroes';
 
-import superheroes from 'superheroes';
+// import superheroes from 'superheroes';
 
-const randomHero = superheroes[Math.floor(Math.random() * superheroes.length)];
-console.log(`I'm a ${randomHero}`);
+// const randomHero = superheroes[Math.floor(Math.random() * superheroes.length)];
+// console.log(`I'm a ${randomHero}`);
+
+// Import the superheroes package
+import * as superheroes from 'superheroes';
+
+// Use the random method to get a random superhero name
+const randomHero = superheroes.random();
+
+console.log(`I'm ${randomHero}`);
+
 
 
