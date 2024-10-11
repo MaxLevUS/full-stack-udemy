@@ -1,0 +1,230 @@
+[33mcommit 19745083a3d68dc7a69cce734417a3fe047dfe91[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Thu Oct 10 20:32:49 2024 -0500
+
+    add 2 games
+
+[33mcommit c1dd0a4c4d7e785a7a3b1727ec155061c081210c[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Thu Oct 10 20:25:58 2024 -0500
+
+    Update submodule references
+
+[33mcommit 5237b390d4479e68085779d6c9faa75f50ab0ea0[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Wed Oct 9 12:56:17 2024 -0500
+
+    ejs modules are done
+
+[33mcommit 9ba71f36ffcac5e75223dc519c35a6a32a141fb0[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Wed Oct 9 12:55:17 2024 -0500
+
+    accompleshed ejs lessons
+
+[33mcommit f3b0063deb281b7bc73eccd89173675d3ee1d05c[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Tue Oct 8 21:31:03 2024 -0500
+
+    ejs modules completed
+
+[33mcommit 1e29750c4129e9aa7cb2756d76ec001107a8de53[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sun Oct 6 16:07:42 2024 -0500
+
+    EJS module started
+
+[33mcommit 55677deb06b437137821718f17a9bf42dae23b24[m
+Merge: 77ada42 086b3bb
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sun Oct 6 16:04:31 2024 -0500
+
+    Updated package files and restored deleted index.html
+
+[33mcommit 77ada424ab7b07e22a9d3c0963fee5c71bbd7163[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sun Oct 6 13:47:42 2024 -0500
+
+    added node modules for EJS preject
+
+[33mcommit 086b3bb9c7ecad2ad8fc32baefd74c55a963df8c[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sat Oct 5 18:58:16 2024 -0500
+
+    added EJS
+
+[33mcommit 6a1363adac1b072817b745d1f98ad97f0bb20c4b[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sat Oct 5 15:43:32 2024 -0500
+
+    EJS started
+
+[33mcommit d5576c652ef70d16b4fc874bb3b94a048e52e842[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Fri Oct 4 18:13:11 2024 -0500
+
+    Express server modules started
+
+[33mcommit f9aefa41cdab5c3c2da6b0e4a9dfbd34cbf23d16[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Tue Oct 1 13:14:08 2024 -0500
+
+    backend QR code
+
+[33mcommit 18353f2214f6da3411442a5b220313d8adc9a18c[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sun Sep 29 16:09:09 2024 -0500
+
+    started Backend
+
+[33mcommit 9e1497f65a5b12060f70b4ab777e7c60b7795c24[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Fri Sep 27 18:39:18 2024 -0500
+
+    simon next attempt
+
+[33mcommit a6a3d14f95fbb8ef98ad01050b6d31b8f4847c25[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Wed Sep 25 17:28:33 2024 -0500
+
+    simon's game is completed
+
+[33mcommit 0cfad5a5390ee9611b2a83a11f3cfdea2e2d585d[m
+Merge: e33ebb7 9ef2b85
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Wed Sep 25 16:52:33 2024 -0500
+
+    Merge branch 'main' of https://github.com/MaxLevUS/full-stack-udemy
+
+[33mcommit e33ebb70db41d814894d82ea95912549a79922e0[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Wed Sep 25 16:52:28 2024 -0500
+
+    dicee game is completed
+
+[33mcommit 9ef2b856b13a915f30aec1c6b7f4cce3d119a5fe[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Tue Sep 24 21:50:23 2024 -0500
+
+    simon game is completed
+
+[33mcommit afb27f70906bdbd5ce7da8b5b372724716d90828[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Mon Sep 23 21:42:16 2024 -0500
+
+    added
+
+[33mcommit fc5b52d3c6aa08ab2a06779276ba094ef143c8f6[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Mon Sep 23 09:48:18 2024 -0500
+
+    improved function
+
+[33mcommit 454c3636bc4f8c95ac5582ba6813204df3a67169[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Mon Sep 23 09:43:01 2024 -0500
+
+    pulled Bogdan's JS
+
+[33mcommit 925863d3a1be0e67a6b5eab77313e4e2bf160b81[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sun Sep 22 16:00:29 2024 -0500
+
+    Bogdan's task 51 was done
+
+[33mcommit 6addfbb0ee0b34d779b9f9c84349eb4f0cfb7124[m
+Merge: ed586d4 32306c7
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sat Sep 21 14:50:52 2024 -0500
+
+    Merge branch 'main' of https://github.com/MaxLevUS/full-stack-udemy
+
+[33mcommit ed586d412c773beb4c8747c0a1c54bebe885f8ec[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sat Sep 21 14:44:34 2024 -0500
+
+    added Bogdan JS training files
+
+[33mcommit 32306c7099d529ed2d28be7d0643961d55978c3c[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Wed Sep 18 14:49:29 2024 -0500
+
+    finnished jQuery module
+
+[33mcommit 002f7dcc035af17f9b22db2d35ac25782363e978[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Tue Sep 17 21:47:37 2024 -0500
+
+    added jQuery library, started jQuery lessons
+
+[33mcommit 0546fd742018be260251f86cffdf6e351d39418d[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Mon Sep 16 18:38:25 2024 -0500
+
+    Objects, DOM, Constructor
+
+[33mcommit 33461977e6e42563f0c7d7e044cad102a5de2856[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Fri Sep 13 21:33:12 2024 -0500
+
+    finished js loop started DOM
+
+[33mcommit ec4aee05f2c8de72eb642ea394f888bc27787055[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Wed Sep 11 13:10:32 2024 -0500
+
+    added training.js
+
+[33mcommit 2632e7c74aa8b7d76d7142879030535d91989ceb[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Mon Sep 9 21:39:42 2024 -0500
+
+    Finished Design Section
+
+[33mcommit b499c45d496a9bb5aa0a5e64f23e9c75d722b75f[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sun Sep 8 18:51:38 2024 -0500
+
+    added text
+
+[33mcommit 4cd71c4c64a5e10f01c94865041663bdddb3a408[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sun Sep 8 18:48:35 2024 -0500
+
+    added hello
+
+[33mcommit 55fac3b23c4f315f59a2c0fd5c105c08c29ff7b4[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sun Sep 8 15:48:51 2024 -0500
+
+    Web Design was added
+
+[33mcommit 1e62e5e302a78a0c4b700d7467598749dfac0506[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Sat Sep 7 11:32:06 2024 -0500
+
+    Saving local changes before pulling from GitHub
+
+[33mcommit 13cd95bf86b4c2837f468cd51918f741532816af[m
+Author: Maksim Levanovich <119817136+MaxLevUS@users.noreply.github.com>
+Date:   Fri Aug 23 16:13:01 2024 -0500
+
+    Add files via upload
+
+[33mcommit 6769fda943fa9001529cf01f52e39f2d213c586c[m
+Author: Maksim Levanovich <119817136+MaxLevUS@users.noreply.github.com>
+Date:   Fri Aug 23 16:10:30 2024 -0500
+
+    Initial commit
+
+[33mcommit a53d1841f20d9efe59b8b9ac64eb994d12d3a160[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Fri Sep 6 17:15:56 2024 -0500
+
+    added 1-11 lessons
+
+[33mcommit 3398d3f40254e6c5e18b7888d5666dd16e6f52c7[m
+Author: Maksim Levanovich <maxlevanovich@gmail.com>
+Date:   Wed Sep 4 14:22:44 2024 -0500
+
+    Deploy to GitHub Pages

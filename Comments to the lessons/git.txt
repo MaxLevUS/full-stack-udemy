@@ -301,3 +301,9 @@ Get Udemy certificate by completing entire course
 
 Features
 Available on iOS and Android
+
+
+--------Merging and Branches---------------------
+
+git branch "name of the branch" - to create a new branch.
+git checkout "name of the branch" - switch the branches you would like to be on.
