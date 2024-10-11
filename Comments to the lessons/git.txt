@@ -307,3 +307,5 @@ Available on iOS and Android
 
 git branch "name of the branch" - to create a new branch.
 git checkout "name of the branch" - switch the branches you would like to be on.
+
+https://learngitbranching.js.org/ link to learn the branches
