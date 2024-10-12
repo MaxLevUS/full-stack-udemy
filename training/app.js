@@ -25,4 +25,58 @@
 
 
 
+// const countNum = (a, b)=>{
+//     if(a<b){
+//         console.log("first number should be bigger that the second one!")
+//     }else{
+//         let count = 0;
+//         let sum = 0;
+//         for(let i=a; i >= b; i--){
+//         count++
+//         console.log(`${count}) ${i}`)
+//         sum +=i
+//         }
+//         console.log(`sum: ${sum}`)
+//     }
+     
+// }
+// countNum(9, 2)
 
+
+//     let dishes = [];
+
+//     let qtyOfDishes = parseInt(prompt("How many dishes would you like to have?"))
+    
+//     for(let i = 0; i < qtyOfDishes; i++){
+//         dishes[i] = prompt("Insert the dishes");
+        
+//     }
+//     document.write("Your dishes: <br>")
+//     for(let i = 0; i <=dishes.length;i++){
+//         document.write(`${i+1}. ${dishes[i]}` + "<br>")
+//     }
+// let search = prompt("Which dish would you like to have?");
+
+
+// for(let i = 0; i<=dishes.length;i++){
+//     if(dishes[i] === search){
+//         document.write(`The dish ${search} exist.`);
+//         break;
+//     }else{document.write("We don't have such dish in a list")
+//         break;
+//     }
+// }
+
+
+
+// let menu = parseInt(prompt("1: Add dishes, 2. Get all dishes, 3. Remove dish"))
+
+// let myArr = ["a", "b", "c"]
+
+// for(let i in myArr){
+//     console.log(i) // 0, 1, 2
+// }
+
+// for(let i of myArr){
+//     console.log(i) // a, b, c
+// }

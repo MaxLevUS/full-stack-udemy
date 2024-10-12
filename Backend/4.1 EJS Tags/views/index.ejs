@@ -9,24 +9,34 @@
 
 <body>
   <h1>
-    <!-- Tite goes here -->
+    <%= title %>
+    <!-- Title goes here -->
   </h1>
   <p>Current second:
     <!-- Current second goes here -->
-  </p>
-  if (seconds % 2===0) {
-  <ul>
-    <!-- List goes here if current second is even. -->
-    <!-- Otherwise it should display the following: -->
-    <!-- <p>No items to display</p> -->
-  </ul>
-  } else {
-  <p>No items to display</p>
-  }
-  <p>
-    <!-- HTML content goes here -->
+    <%= seconds %>
   </p>
 
+  <% if (seconds % 2 === 0) { %>
+    <ul>
+      <% for(let i = 0; i < items.length; i++) { %>
+        <li>
+          <%= items[i] %>
+        </li>
+      <% } %> 
+      <!-- List goes here if current second is even. -->
+    </ul>
+  <% } else { %>
+    <!-- Otherwise it should display the following: -->
+    <p>No items to display</p>
+  <% } %>
+
+  <p>
+    <!-- HTML content goes here -->
+    <%- htmlContent %>
+  </p>
+
+  <%- include("footer.ejs") %>
   <!-- Footer goes here -->
 </body>
 
