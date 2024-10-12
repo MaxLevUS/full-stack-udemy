@@ -1,0 +1,693 @@
+git log - shows the commits.
+
+git diff "name of the commits - shows the difference between the commits.
+
+git checkout - will get you back to the last version of the commits.
+
+By having a GitHub repository we can get inside any repository in GitHub and get the codes of any website's code published there, for instance repository called FlappyBird. Searching that in the Searching bar. 
+
+Below is the way how to set up remote repository:
+git remote add origin https://github.com/MaxLevUS/Story.git
+git branch -M main
+git push -u origin main
+
+To check you commits history you should proceed the following steps: GitHub repository=>your repository=>Insights=>Network=>and in the middle you will see the line with the history of commits. And also you may track your commits in simplifier method by getting inside your repository, then clicking "commits" button on the right top conner. Then by clicking on a specific commit, you will get all information about changes were done. 
+
+so the working process looks like that:
+
+working directory(git add) => staging Area(git commit(by commit you create the history with the branches, in our case main branch with multiple commits)) => Local repository(git push(all commits will be pushed to the remote repository))
+
+
+----------Git Ignore---------------------
+git rm --cached -r . this command removes all existing files from being pushed to the staging area. 
+git commit -m "Removed files from tracking but kept them locally"
+PS C:\Users\Windows 11\Desktop\IT\fullstack Udemy\Git class\Project> git rm --cached -r .  
+rm '.DS_Store'
+rm '.gitignore'
+rm 'firstDir.js'
+rm 'secondDir.js'
+rm 'secrets.js'
+rm 'thirdDir.js'
+PS C:\Users\Windows 11\Desktop\IT\fullstack Udemy\Git class\Project>
+
+*.txt - all txt files will be ignored
+*.log - all log files will be ignored
+
+
+By creating a new project, we have some files which normally should be ignored. For instance: node files and you can find all files which normally ignored in the GitHub repository called github.com/github/gitignore => file's name "NOde.gitignore. Simply copy the code inside there and paste it in your project's ignore file. 
+
+
+.gitignore folder should contain all secret file like passwords, API keys and etc. 
+
+
+---------------git clone---------------------
+
+In the last lesson, we looked at how we can push our local repository to a remote repository on GitHub.
+
+Now, in this lesson, I want to talk about cloning a remote repository on GitHub to pull it onto your
+
+local repository on your machine.
+
+So this is called Cloning and the command is, "git clone".
+
+And this is a way for you to pull down all of the versions and all of the commits of a particular remote
+
+repository and to store the files in your own working directory.
+
+So once you've cloned a repo, you've essentially made a copy of it on your own local working environment
+
+and allows you to stand on the shoulders of giants and continue where they left off. So you won't need
+
+to clone it again during regular development.
+
+You'll continue on your own branch of that project.
+
+So why would you need to clone someone else's project?
+
+Well, it's basically so that you can have your own copy of a program that they wrote.
+
+Maybe you want to customize it to your own needs.
+
+Maybe the program needs to do something it currently doesn't do and you want to extend its functionality.
+
+Or maybe you just found a bug and you want to fix it.
+
+So essentially, it allows you to leverage somebody else's open-source code.
+
+So they're putting their source code out onto the internet and you can simply make a copy of it and
+
+continue where they left off.
+
+For example, a lot of people use self-hosted applications for their business.
+
+These are free versions of products and services you might have to normally pay for, such as productivity
+
+and project management tools that are an alternative to Jira, or Trello, or email servers like MailChimp.
+
+Instead of having to pay MailChimp a ton of money, you can host your own email service or time-tracking
+
+software for freelancers, and there's a ton, a ton literal ton of different options and you can take
+
+a look through that in this GitHub README.
+
+Let's see how it works in practice.
+
+Let's clone some actual repos from GitHub and run them locally to see how the entire process works.
+
+The command is pretty simple.
+
+It's simply git space, clone space,
+
+the URL (git clone 'url'). The URL will typically be from GitHub and it will look something like this.
+
+So what are we going to clone?
+
+Well, did you know that you can run the original Quake video game in your web browser?
+
+It's entirely built in JavaScript, so there will be parts of it that you'll be able to read through
+
+and you'll be able to understand,
+
+but there will be a lot of work that's done to create this game, so...
+
+Thankfully, we don't have to build it from scratch,
+
+all we have to do is just to "git clone".
+
+I go ahead, I grab the URL to clone the repository and in my terminal, I can write git clone and paste
+
+in that URL.
+
+Now, once it receives all of the objects and it gets loaded onto my own computer, then I can go ahead
+
+and cd into the repository quake.js,
+
+and once I'm inside that repository,
+
+I can install all of the NPM packages by running "npm install". And then the next step as they described
+
+in the documentation, is I need to set the "content.quakejs.com" as the content server.
+
+So I'm just going to simply copy this entire line of commands and paste it into my terminal.
+
+Now once I'm done, I can simply run the server using Node by again pasting this line of commands.
+
+And once it starts you can see that web server is now listening on port 8080.
+
+And so now I can go to that port and check out the QuakeJS game.
+
+So making sure that your URL is the same as the one that they have set in their documentation,
+
+go ahead and agree and you'll see once everything's loaded up the original Quake game running on your
+
+browser,
+
+but more importantly, you're running it from the code that you cloned from GitHub.
+
+So feel free to have a play around with the game.
+
+It's pretty cool and it's very retro.
+
+And there you have it.
+
+Now another example is Wordle.
+
+Wordle is basically a word game where you have to guess a five-letter word using just six tries.
+
+And it went completely viral a few years ago and eventually got bought by The New York Times.
+
+And the official Wordle is now accessed at the New York Times alongside all of their different crosswords
+
+and puzzles.
+
+But somebody has created all the code for Wordle, and we can clone it and run it on our own system.
+
+Again, grabbing hold of the URL at the GitHub repository for Word Mastermind, you can see it's entirely
+
+created in JavaScript, HTML and CSS.
+
+So all the things that we know about, we can head back to our terminal, use "git clone" to clone from
+
+that URL, and then again cd into the word-mastermind.
+
+And the reason why they created it is because the original game only allows you to play one word per
+
+day,
+
+but what if you get entirely addicted to Wordle and you want to play more than one word per day?
+
+Well, you're in luck because you know how to clone the program and run it on your own system.
+
+Now all we have to do is just go back, use "npm install" to install all of the required modules,
+
+and once that's done,
+
+we can use the command npm start as they describe in the documentation, and it will show us the location
+
+of our server.
+
+So if we just click on it, open it inside Chrome, you'll see Word Mastermind running in the browser.
+
+Go ahead,
+
+have a guess,
+
+see what you have,
+
+and my personal starting, word top-secret is usually Notes or another word with R and T and S. But
+
+have fun playing with that and you can dig through the code.
+
+You can change it from Word Mastermind to anything else you want to call it.
+
+Or you can change the colors.
+
+You can modify the code base because you now own it on your own computer, and you can run it, and you
+
+can modify it. And you can see just how cool it is to be able to simply clone somebody else's entire
+
+code base that they've made open source for you to continue developing on it.
+
+So look through the code, open it up and take a look inside the dict folder to see all of the available
+
+words.
+
+There's no cheating here.
+
+They've also got other languages, and if you look inside the source folder, you'll be able to see
+
+the actual code that makes this game run.
+
+So you can see it's just simple JavaScript, which you know all about,
+
+and some of these things you might not understand, but through studying somebody else's code and modifying
+
+it, it usually makes you a much better developer.
+
+Go ahead, try to improve your own version, make it a 2.0 Wordle, whatever that means to you.
+
+And this is a big part of your developer journey.
+
+One of the best ways to improve your programming skills is to read other people's code, to understand
+
+what their code is doing, and most importantly, try to modify it just a little bit at the beginning
+
+and maybe a lot more in the future,
+
+but it gives you a way to level up your skill set by building on top of somebody else's work.
+
+And open source code is a great way to get started.
+
+You can clone somebody's repository.
+
+Take a look at some of the more interesting ones that we've listed here, such as Wordle or Quake.
+
+See roughly how things work and see if there are just small things that you might want to change about
+
+it.
+
+And this will lead you onto a very important step on your developer journey, which is contributing
+
+to open source code.
+
+Now there's a lot of projects.
+
+There's even a list of projects on GitHub where they have curated some projects which are particularly
+
+welcoming to first time contributors.
+
+So teams which are open for first timers or beginners to contribute.
+
+And you can take a look at that by going to awesome-for-beginners, this particular repository and take
+
+a look through the README.
+
+Take a look at maybe the AncientBeast game, which is a Turn based strategy game,
+
+or take a look at the Brave Browser which has this concept of rewarding creators with crypto and providing
+
+an alternative to advertisement in browsers.
+
+You can contribute to all of these, but in order to know how to make a contribution, you need to learn
+
+about Pull Requests, Branches and Merging, which is exactly what we'll cover in the upcoming lessons.
+
+So for all of that and more, I'll see you there.
+
+Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps
+Rating: 4.7 out of 5
+4.7
+406,237 ratings
+1,350,898
+Students
+61.5 hours
+Total
+Last updated August 2024
+English
+English, Arabic [Auto]
+, 
+information alert
+Schedule learning time
+Learning a little each day adds up. Research shows that students who make learning a habit are more likely to reach their goals. Set time aside to learn and get reminders using your learning scheduler.
+By the numbers
+Skill level: All Levels
+Students: 1350898
+Languages: English
+Captions: Yes
+Lectures: 373
+Video: 61.5 total hours
+Certificates
+Get Udemy certificate by completing entire course
+
+Features
+Available on iOS and Android
+
+
+--------Merging and Branches---------------------
+
+git branch "name of the branch" - to create a new branch.
+git checkout "name of the branch" - switch the branches you would like to be on.
+
+https://learngitbranching.js.org/ link to learn the branches
+
+--------------Forking and pull Requests---------------------
+
+In the last few lessons, we looked at implementing source control locally, using the command line
+
+and also remotely using GitHub.
+
+So now I want to take you a little bit further and I want to talk about collaboration using remote repositories
+
+and GitHub because this is one of the best ways to start working in a team of programmers and to contribute
+
+your skills to open source projects.
+
+So we've seen all of these four areas the Working Directory, the Staging area, the Local Repository
+
+as well as the Remote Repository,
+
+and you should be pretty familiar with all four of these areas by now.
+
+Now in the next scenario, let's shift over to just look at the Local and Remote Repository that you
+
+own.
+
+Let's say that,
+
+Angela, so myself, I own this repository.
+
+I created it locally and then I pushed it to my remote repository on GitHub.
+
+Now let's say that I have an evil twin who's called, I don't know,
+
+Bangela. That's a terrible name.
+
+Let's say that she also wanted to make changes to my repository.
+
+She's looking at my code base and you know, she wants to add some features or fix some bugs or do something.
+
+Because I own this remote repository over here,
+
+in order for her to work on it, she could make a copy of it that exists on her GitHub account.
+
+Remember, this is different from "git clone".
+
+Git clone is just grabbing at the entirety of the repository and then cloning it to your local work
+
+environment.
+
+Now, in this case, we're basically just copying a repository that's hosted on GitHub and we're keeping
+
+the copy under our own GitHub account where we can make changes to it.
+
+So this in terms of GitHub lingo is called Forking.
+
+Now once you've forked a remote repository, then you now own it.
+
+You have full permissions to do whatever it is that you like with this copy of the repository, because
+
+as you can imagine, it would be pretty crazy if everybody could modify your source code on all of your
+
+open source repositories because, you know, it would lead to maybe amateurs changing all sorts of
+
+things that you don't want them to or, you know, people making features that are incompatible with
+
+what you've got already.
+
+Basically, you would only give people who you have a trusting relationship with, write
+
+access, to your remote repository.
+
+So say if you worked within a team and you're all working on a product, then everybody in the team
+
+probably has both read and write permissions on a single remote repository and that way they can "git
+
+clone" and work on it locally and then push it and resolve any sort of conflicts that way,
+
+but you don't want anybody on the Internet having those kind of permissions.
+
+So how do you implement this kind of open source collaboration then?
+
+Well, it's through Forking and making Pull requests.
+
+So now let's say that evil Angela, Bangela has forked my repository.
+
+So on her GitHub account, she now owns a copy of my repository and from this point she can then clone
+
+that repository to work on it locally.
+
+And if she decides to add some features to it, maybe, you know, improve the code base or add some
+
+more code or do something crazy or whatever it is that she wants, then after she's happy with that
+
+and she's committed those changes, then she can push it to her remote repository.
+
+And then if she wants me or good Angela to incorporate those changes that she made, then her only option
+
+is to make a "Pull request",
+
+if she is not within that trusted pool of people who all have read and write access to my remote repository.
+
+So say if she only has read access, then she would have to make a Pull request.
+
+And it's almost like making a suggestion.
+
+Here are some suggested changes that I've been working on,
+
+what do you think about it?
+
+If you okay it, then please, you know, merge it to your remote repository.
+
+The reason why it's called a Pull request and not a push request is because the person who has the write
+
+permission to the repository,
+
+so I have write permission to my own remote repository, which has been forked and duplicated by, you
+
+know, my evil twin.
+
+If she wants to incorporate those changes, then I have the deciding vote so I can review those changes
+
+and I can pull the changes over.
+
+So it's not a push because you don't own the rights to the remote repository that you're trying to push
+
+to.
+
+In this case, if I decide after a code review that actually those features that she added were pretty
+
+great and it seems compatible with my code so far and doesn't break anything, then I would approve
+
+the pull request and merge her repository with my own, so the changes will be reflected in a new commit.
+
+So let's take a look at this in action.
+
+So here we've got our original Story repository.
+
+So this is a remote repository, remember, because it's hosted online on GitHub and we've got a number
+
+of commits and we've been doing some modifications and writing to write our storyline.
+
+Now I'm going to log out of my account.
+
+So that was the account that created the Story and then I'm going to sign in using a different account.
+
+So right now I'm signed in to a different GitHub account.
+
+This account is named "gilfoyleismyothername", and now I'm going to search for that repository.
+
+So I found the Story repository by the user angelabauer.
+
+So that was the one that we saw earlier on.
+
+So I'm going to go into this repository, and you can see that all of these lines and files are publicly
+
+visible and you can read through all of it even though you are now not signed in to the account that
+
+created this repository. From here, what I'm going to do is I'm going to Fork this repository.
+
+As we mentioned before, forking is simply making a copy or a duplicate of a remote repository and putting
+
+it under your own GitHub account.
+
+You can see this user that I've created is called gilfoyleismyothername, and now I have this repository
+
+under my own username, so I've made a copy of it and you can see it's exactly the same as before.
+
+Everything's been copied over, including all of the previous commits that were made.
+
+So from here I'm going to make some changes.
+
+So let's maybe change one of these storylines.
+
+So let's change chapter 4.
+
+So let's say that this other user, this other person has some suggested improvements to my code, or
+
+in this case, to my writing.
+
+They're still keeping the spirit of the original repository alive because we are now converting into
+
+a space-theme or an alien-theme.
+
+So I've made my changes to chapter4, and I'm going to commit those changes saying, "Add more space-
+
+themes to chapter 4."
+
+So that's what I did, and I'm going to commit to the master branch.
+
+So this is the master branch of my own forked copy of the Story repository.
+
+So once I commit those changes, then we can view what it currently looks like under the Graphs.
+
+If we have a look at the Network,
+
+you can see that this is the point where I forked the story repository and that commit was created by
+
+Angela Yu, which basically merged this branch to the master branch.
+
+So we did that
+
+two lessons back,
+
+if you remember.
+
+The latest commit though, is made by this current user,
+
+gilfoyleismyothername, and you can see that I've added it to the master branch of my forked copy
+
+of that repository.
+
+Say, if I now open up a incognito window and I log back in to the Angela account and go over to that
+
+Story repository, you can see that if I have a look inside my Graphs go into Network that that latest
+
+change, it's not reflected on my master branch.
+
+It's showing up as a separate branch made by gilfoylismyothername and you can see the members
+
+who have forked your repository.
+
+This is a great way of collaborating because you can have contributors, make edits or add new features
+
+to your pre-existing code base or repository.
+
+And now what I can do if I head back to the Gilfoyle account,
+
+so I'm just going to flip through these two so that you can see, right now I'm inside the Gilfoyle account,
+
+and this is the angelabauer account.
+
+Now, under the Gilfoyle account, what I can do is I can make a Pull request.
+
+We can do that here
+
+and you can see that it's able to merge.
+
+And these are the changes.
+
+So swapping that word for that word, swapping that word for that phrase.
+
+Now, all I have to do is hit Create Pull request and tell the original author, which is Angela
+
+Bauer, what I've done, why I think my modifications or my features are worthy to be merged with the
+
+original repository.
+
+And you know,
+
+any other notes, right?
+
+Any other comments that I have.
+
+Let's just say...
+
+Always helps to be complimentary.
+
+Now, let's go ahead and create a Pull request.
+
+The pull request is done,
+
+but if we have a look back into the Story repository, you can see that those changes are not made right?
+
+It's because I don't own this repository.
+
+I don't have write access, only have read access as a member of the general public and not a member
+
+of the trusted inner circle.
+
+So I can only suggest my changes.
+
+If we head over back to the angelabauer account who owns this repository.
+
+Now, if I have a look under Pull requests, I've got a brand new Pull request, right?
+
+So it previously was 0, but now I have 1 and it's showing as 1 Open Pull request.
+
+And this is added a minute ago by
+
+Gilfoyle and if I look at it, I can see why he thinks that this modification is necessary and what
+
+were his commit message.
+
+And I can also take a look at the commits that he made and compare the differences.
+
+So review those changes.
+
+So I could say something like, great job,
+
+Gilfoyle. And I can submit this feedback to
+
+Gilfoyle and approve merging these changes.
+
+Now, all I have to do is hit Merge pull request and maybe add a, "Merged from Gilfoyle's modifications
+
+to chapter 4."
+
+Okay, so let's go ahead and confirm the merge.
+
+And now you can see that that commit is added to angelabauer, master.
+
+So if I have a look inside my Graphs now,
+
+you can see that the latest commit was my merge and you can see where it came from.
+
+It came from a fork made by Gilfoyle, which shows up as a separate branch, and then it got merged
+
+back into the main branch of the main repository.
+
+So some people use GitHub purely as version control for their own projects and use some of the features
+
+that we discussed in previous lessons,
+
+but there's also a huge community of awesome coders on here who have created really brilliant projects
+
+and if you can see ways of improving it or contributing to it, then it's a great way of starting to
+
+learn how to work in a team of programmers, which is a really essential skill when you're working for
+
+a startup or for a company.
+
+So, for example, if we have a look at the Alamofire repository, if you have a look at the contributions,
+
+you can see that there have been loads and loads of other users who have looked at the code and done
+
+things, you know, or made suggestions, and to steadily improve this framework that, you know, everybody
+
+else is benefiting off, right?
+
+You can see that a total of 4300 forks have been made and there's currently four open pull requests,
+
+but 559 pull requests were closed.
+
+So let's have a look.
+
+So, for example, in this case, this guy updated the Readme to the current version.
+
+So that's obviously just editing a text file and that's pretty much within anybody's capabilities,
+
+right?
+
+And then it got merged by somebody who owned this repository and they gave them a bit of feedback.
+
+Right?
+
+But there's other things like, you know, code additions or code deletions or modifications that people
+
+have made.
+
+So this guy made some fixes and he's documented:
+
+what were the goals,
+
+what were the implementation details, what were the tests that he performed?
+
+And then the guy who owned the repository said, hey, just, you know, maybe one thing that you need
+
+to change.
+
+Have a look in here.
+
+And then once it was changed, then it was approved and merged with the master branch.
+
+Have a look around on GitHub and see what are some of the cool projects that you could maybe get involved
+
+in. To begin with,
+
+have a look at the libraries that you've been using and if you want, you can build on top of it, either
+
+for your own goals and purposes,
+
+but also, you know, if you're building on top of somebody else's open-source code, then it's a nice
+
+thing to contribute back to the open source world by forking and making a pull request to offer your
+
+improvements or bug fixes or new features.
+
+As I said, it's almost like a social network for programmers, and you can make a lot of great friends
+
+on here, and you can also get a lot of help on here in your development journey.
+
+So I hope you enjoyed all of that and I will see you on the next lesson.
+
+
