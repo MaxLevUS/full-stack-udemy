@@ -19,7 +19,53 @@ so the working process looks like that:
 
 working directory(git add) => staging Area(git commit(by commit you create the history with the branches, in our case main branch with multiple commits)) => Local repository(git push(all commits will be pushed to the remote repository))
 
+git show "file's name" - shows us the script of the committed file. 
+
 git checkout "name of the branch" - change the branches.
+
+git merge - first - git finds the commit where new branch was created - "base", then ongoing branch "ours" and 
+separated branch "theirs". Then git takes "base" as the main branch and adding to the "base" changes from 
+"ours" and "theirs" branches. so, after that we get a new branch with, where all 3 branches are merged. But, if "ours"
+and "theirs" are differ from each other git will ask as to choose which of the branches needs to be added as 
+a main ones. But, if "ours" wasn't changed at all, but "their" was changed, then after the merging all files from 
+the changed "their" branch will be added to the main branch. 
+
+If all version are differ from each other - git will show us the difference between branches. if for instance
+we have 3 lines of the code and in "ours" branch line 2 is changed, but in "theirs" line 3 is changed, git will
+merge the branches accordingly, by adding changed line 2 and line 3 to the main branch. And also, sometimes 
+some of the changes git could merge, but some of them not, that might be the cause of the conflict. 
+Steps in resolving a conflicts:
+1. git diff -U0 ours index.html - shows us the differ changes in branch "ours" in the file "index.html"
+2. git diff -U0 theirs index.html - shows us the differ changes in branch "theirs" in the file "index.html"
+
+git merge-base "branch's name" "another branch's name" - shows where new branch was created.
+
+git reset --hard - this command will stop the merge process and erase all uncommited changes including the conflicts
+and we will got back to the clean branch main. 
+
+git reset --merge - leaves uncommited changes of the files, which wasn't involved to the merge process, the files 
+which are similar to each other. 
+
+git checkout --conflict=diff3 --merge index.html - this command will give ass all 3 branches to compare the 
+conflicts between branches. 
+
+git config --global merge.conflictStyle diff3 - this command will allow us to set globally up the rendering 
+style of showing the all conflicts on on page (default).
+
+git show :1:index.html - shows us common ancestor (общий предок)
+git show :2:index.html - shows us "ours"
+git show :3:index.html - shows us "theirs"
+
+so, to resolve the conflict you should make the changes, but all off you won't be able to commit you changes so far,
+because your conflict files are chashed and still located in the memory. 
+To resolve that you should add changed file to the git by the command bellow:
+git add index.html 
+git status
+git commit -m "conflict is resolved"
+But you may use the command below:
+git merge --continue - will bring us to the code editor "vs code"- page shows what we're doing right now. But, 
+it just gives us information what we are doing right now, we may read that and close the window. After that 
+a conflict should be resolved. 
 
 ----------Git Ignore---------------------
 git rm --cached -r . this command removes all existing files from being pushed to the staging area. 
