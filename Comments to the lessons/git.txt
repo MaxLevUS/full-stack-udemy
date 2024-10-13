@@ -2,6 +2,8 @@ git log - shows the commits.
 
 git diff "name of the commits - shows the difference between the commits.
 
+git diff --name-only "branch1" "branch2" - gives just the names of the folders
+
 git checkout - will get you back to the last version of the commits.
 
 By having a GitHub repository we can get inside any repository in GitHub and get the codes of any website's code published there, for instance repository called FlappyBird. Searching that in the Searching bar. 
@@ -17,6 +19,7 @@ so the working process looks like that:
 
 working directory(git add) => staging Area(git commit(by commit you create the history with the branches, in our case main branch with multiple commits)) => Local repository(git push(all commits will be pushed to the remote repository))
 
+git checkout "name of the branch" - change the branches.
 
 ----------Git Ignore---------------------
 git rm --cached -r . this command removes all existing files from being pushed to the staging area. 
