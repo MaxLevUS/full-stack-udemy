@@ -80,3 +80,18 @@
 // for(let i of myArr){
 //     console.log(i) // a, b, c
 // }
+
+// const a = 5;
+
+// function returnA(){
+//     console.log(a);
+//     var a = 10;
+// }
+
+// returnA()
+
+for(let i=0;i<=5;i++){
+    setTimeout(function(){
+        console.log(i)
+    }, i*600)
+}
