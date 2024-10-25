@@ -1,0 +1,60 @@
+SQL commands: SQL uses upper cases letters for the commands
+
+- how to create the table: 
+CREATE TABLE table_name (
+    id INT NOT NULL,
+    name STRING, 
+    price MONEY,
+    PRIMARY KEY (id)
+) 
+- below is another example of creating the table, where we have the FOREIGN KEY,
+which links the tables together to establish the relationships:
+CREATE TABLE orders (
+    id INT NOT NULL,
+    order_number INT,
+    customer_id INT,
+    product_id INT,  -- Added product_id column
+    PRIMARY KEY (id),
+    FOREIGN KEY (customer_id) REFERENCES customers(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)  -- Now this will work
+);
+
+- show the table:
+SELECT * FROM 'products'
+
+- insert the value to the tables
+INSERT INTO products
+VALUES (1, 'Pen', 1.20)
+
+- insert into specific product 
+INSERT INTO products (id, name)
+VALUES (2, 'Pencil')
+
+- show specific tables
+SELECT name, PRICE from 'products';
+
+- show products by id
+SELECT * FROM products WHERE id=1
+
+- add another table
+ALTER TABLE products
+ADD stock INT
+
+- add date to the table
+UPDATE products
+SET stock = 32
+WHERE id=1
+
+- delete options(if you do not indicate statement WHERE, that will delete)
+DELETE FROM products
+WHERE id=2
+
+- joins the tables together
+SELECT orders.order_number, products.name, products.price, products.stock
+FROM orders
+INNER JOIN products ON orders.product_id = products.id
+
+SELECT orders.order_number, products.name, products.price
+FROM orders
+INNER JOIN products ON orders.product_id = products.id;
+
