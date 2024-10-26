@@ -1,0 +1,17 @@
+- how to create the table
+CREATE TABLE friend (
+    id SERIAL PRIMARY KEY, (SERIAL-gives us an option unique id to be created automatically)
+    name VARCHAR(50),
+    age INT,
+    is_cool BOOLEAN
+)
+
+- how to choose specific area in the table
+SELECT country FROM world_food WHERE wheat_production > 20
+
+- how to find a specific object starting with specific character, in our case with "U"
+SELECT country FROM world_food WHERE country LIKE 'U' || '%'
+
+
+- how to find a specific object ending with specific character, in our case with "a"
+SELECT country FROM world_food WHERE country LIKE '%' || 'a'
