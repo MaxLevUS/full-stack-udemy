@@ -15,3 +15,9 @@ SELECT country FROM world_food WHERE country LIKE 'U' || '%'
 
 - how to find a specific object ending with specific character, in our case with "a"
 SELECT country FROM world_food WHERE country LIKE '%' || 'a'
+
+- how to create table with CHAR(2), NOT NULL-not empty, UNIQUE - alow to put just unique value
+CREATE TABLE visited_countries(
+	id SERIAL PRIMARY KEY,
+	country_code CHAR(2) NOT NULL UNIQUE
+);
